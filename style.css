@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    height: 40px;
+    gap: 20px ;
+    place-content: center;
+    place-items: center ;
+
+}
+main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* 4 colunas iguais */
+    grid-template-rows: repeat(8, 1fr);
+    /* 8 linhas (2 linhas para cada bloco) */
+    height: 100vh;
+    /* ocupa a tela inteira */ 
+}
+
+.bloco {
+    grid-column: 1 / -1;
+    /* ocupa todas as colunas */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: bold;
+}
+
+.bloco1 {
+    grid-row: 1 / 3;
+    background: #3498db;
+}
+
+.bloco2 {
+    grid-row: 3 / 5;
+    background: #e74c3c;
+}
+
+.bloco3 {
+    grid-row: 5 / 7;
+    background: #2ecc71;
+}
+
+.bloco4 {
+    grid-row: 7/ 9;
+    background: #9b59b6;
+}
