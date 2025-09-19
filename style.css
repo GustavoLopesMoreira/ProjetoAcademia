@@ -40,7 +40,9 @@ header a {
     color: black;
 
 }
-
+.paginaatual{
+        border-bottom: 3px solid goldenrod ;
+}
 main {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
