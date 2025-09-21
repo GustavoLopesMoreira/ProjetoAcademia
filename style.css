@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+
 }
 
 header {
@@ -10,24 +11,24 @@ header {
     height: 40px;
     place-content: center;
     place-items: center;
-    border: 1px solid black;
     padding: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(224, 224, 224);
+    
 }
 
 #logo {
     padding: 10px;
-    border: 1px solid black;
 }
 
 #menu {
-    border: 1px solid black;
-    padding: 10px;
 
+    font-size: 21px;
 }
 
 header #menu ul {
     display: flex;
-    gap: 10px;
+    gap: 7px;
 }
 
 header ul li {
@@ -37,10 +38,15 @@ header ul li {
 
 header a {
     text-decoration: none;
-    color: black;
-
+    color: rgb(22, 22, 22);
+    padding: 3px;
 }
 
+header a:hover{
+    background-color:goldenrod;
+    border-radius: 5px;
+    
+}
 .paginaatual {
     border-bottom: 3px solid goldenrod;
 }
@@ -68,30 +74,58 @@ main {
 .bloco1 {
     height: 350px;
     grid-row: 1 / 3;
-    background-image: url(img/unnamed.png);
+    background-image: url(img/treinando.png);
     background-position: center;
+    background-size: 500px 400px;
     background-repeat: no-repeat;
-    background-size: 500px 350px;
     display: flex;
     flex-direction: row;
-    align-items:first baseline;
+    align-items: first baseline;
     justify-content: space-between;
-    padding: ;
+    position: relative;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
 }
 
-.texto1{
-    background-color: rgba(0, 0, 0, 0.664);
-    color: rgb(252, 250, 250);
-    text-align: center;
-    padding: 5px;
-    margin: 20px 10px 10px 10px;
-}
-.texto2{
-    background-color: rgba(0, 0, 0, 0.664);
+#texto1 {
+    position: absolute;
+    right: 10px;
+    top: 40px;
+    background-color: rgba(56, 56, 56, 0.603);
+    border-radius: 20px;
+    padding: 10px;
     color: goldenrod;
-    text-align: center;
-    padding: 5px;
 }
+
+#texto2 {
+    position: absolute;
+    right: 30px;
+    top: 97px;
+    background-color: rgba(56, 56, 56, 0.603);
+    border-radius: 20px;
+    padding: 10px;
+
+}
+
+#texto3 {
+    position: absolute;
+    left: 60px;
+    top: 220px;
+    background-color: rgba(56, 56, 56, 0.603);
+    border-radius: 20px;
+    padding: 10px;
+}
+
+#texto4 {
+    position: absolute;
+    left: 30px;
+    top: 277px;
+    background-color: rgba(56, 56, 56, 0.603);
+    border-radius: 20px;
+    padding: 10px;
+    color: goldenrod;
+}
+
 .bloco2 {
     height: 350px;
     grid-row: 3 / 5;
