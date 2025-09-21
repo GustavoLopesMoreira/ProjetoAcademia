@@ -40,9 +40,11 @@ header a {
     color: black;
 
 }
-.paginaatual{
-        border-bottom: 3px solid goldenrod ;
+
+.paginaatual {
+    border-bottom: 3px solid goldenrod;
 }
+
 main {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -55,7 +57,6 @@ main {
 
 .bloco {
     grid-column: 1 / -1;
-    /* ocupa todas as colunas */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -65,27 +66,49 @@ main {
 }
 
 .bloco1 {
+    height: 350px;
     grid-row: 1 / 3;
     background-image: url(img/unnamed.png);
-    background-position: 80% 40%;
+    background-position: center;
     background-repeat: no-repeat;
-    background-size: 500px 320px;
+    background-size: 500px 350px;
+    display: flex;
+    flex-direction: row;
+    align-items:first baseline;
+    justify-content: space-between;
+    padding: ;
 }
 
+.texto1{
+    background-color: rgba(0, 0, 0, 0.664);
+    color: rgb(252, 250, 250);
+    text-align: center;
+    padding: 5px;
+    margin: 20px 10px 10px 10px;
+}
+.texto2{
+    background-color: rgba(0, 0, 0, 0.664);
+    color: goldenrod;
+    text-align: center;
+    padding: 5px;
+}
 .bloco2 {
+    height: 350px;
     grid-row: 3 / 5;
     background: #e74c3c;
 }
 
 .bloco3 {
+    height: 350px;
     grid-row: 5 / 7;
     background-image: url(img/academia.png);
-    background-position: 100% 60%;
+    background-position: center;
     background-repeat: no-repeat;
-    background-size: 500px 320px;
+    background-size: 500px 350px;
 }
 
 .bloco4 {
+    height: 350px;
     grid-row: 7/ 9;
     background: #9b59b6;
 }
