@@ -1,12 +1,25 @@
 * {
     margin: 0;
     padding: 0;
+    text-decoration: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
 
+:root {
+    --cor1: black;
+    --cor2: black;
+    --cor3: black;
+    --cor4: black;
+    --background1:rgb(224, 224, 224) ;
+    --background2: ;
+    --background3: ;
+    --font1:;
+    --font2:;
 }
 
 header {
     display: grid;
-    grid-template-columns: 100px 1fr;
+    grid-template-columns: 80px 1fr;
     grid-template-rows: 1fr;
     height: 40px;
     place-content: center;
@@ -14,21 +27,20 @@ header {
     padding: 20px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: rgb(224, 224, 224);
-    
+
 }
 
 #logo {
-    padding: 10px;
+    font-size: 13px;
 }
 
 #menu {
 
-    font-size: 21px;
+    font-size: 13px;
 }
 
 header #menu ul {
     display: flex;
-    gap: 7px;
 }
 
 header ul li {
@@ -42,11 +54,12 @@ header a {
     padding: 3px;
 }
 
-header a:hover{
-    background-color:goldenrod;
+header a:hover {
+    background-color: goldenrod;
     border-radius: 5px;
-    
+
 }
+
 .paginaatual {
     border-bottom: 3px solid goldenrod;
 }
@@ -80,6 +93,7 @@ main {
     background-repeat: no-repeat;
     display: flex;
     flex-direction: row;
+    border: 1px solid black;
     align-items: first baseline;
     justify-content: space-between;
     position: relative;
@@ -127,10 +141,69 @@ main {
 }
 
 .bloco2 {
+    grid-row: 3 / 4;
+    border: 1px solid black;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+.bloco2 p {
+    font-size: 13px;
+    color: black;
+    padding: 10px;
+}
+
+#botaobloco2 {
+    padding: 3px;
+    border-radius: 5px;
+}
+
+/*.bloco2 {
     height: 350px;
     grid-row: 3 / 5;
-    background: #e74c3c;
+    background-image: url(img/sorrindo.png);
+    background-position: center;
+    background-size: 500px 400px;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
 }
+
+.bloco2 h1 {
+    font-size: 30px;
+    background-color: rgba(56, 56, 56, 0.603);
+    box-shadow: 2px 2px 3px black;
+    border-radius: 10px;
+    padding: 5px;
+    color: white;
+}
+
+.bloco2 p {
+    font-size: 16px;
+    text-align: center;
+     background-color: rgba(56, 56, 56, 0.603);
+     width: 350px;
+     padding: 10px;
+     border-radius: 10px;
+}
+
+#botaobloco2 {
+    padding: 3px;
+    border-radius: 5px;
+    font-size: 15px;
+    background-color: rgba(39, 39, 39, 0.781);
+    color: goldenrod;
+    cursor: pointer;
+   
+} */
 
 .bloco3 {
     height: 350px;
