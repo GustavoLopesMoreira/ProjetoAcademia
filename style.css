@@ -2,8 +2,7 @@
 * {
     margin: 0;
     padding: 0;
-    text-decoration: none;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 :root {
@@ -20,22 +19,17 @@
 
 /*---------- Header ----------*/
 body {
-    min-height: 100%;
-    display: grid;
-    grid-template-rows: auto 1fr auto;
+    background-color: var(--background1);
 }
 
 header {
-    display: grid;
-    grid-template-columns: 80px 1fr;
-    grid-template-rows: 1fr;
-    height: 40px;
-    place-content: center;
-    place-items: center;
-    padding: 20px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
     background-color: rgb(224, 224, 224);
-
+    padding: 15px;
+    gap: 5px;
 }
 
 footer {
@@ -51,10 +45,12 @@ footer {
 
 #menu {
     font-size: 13px;
+
 }
 
 header #menu ul {
     display: flex;
+    gap: 5px;
 }
 
 header ul li {
@@ -82,172 +78,105 @@ header a:hover {
 main {
     display: grid;
     grid-template-columns: 1fr;
-
-    grid-template-rows: 350px auto 350px auto 350px auto;
-
-
-
+    background-color: var(--background1);
+    grid-template-rows: repeat(4, 1fr);
 }
 
 /*---------- Configs Gerais Blocos ----------*/
 
 /*---------- Bloco 1 ----------*/
-.bloco1 {
-    height: 350px;
-    grid-row: 1 / 2;
-    background-image: url(img/treinando.png);
-    background-position: center;
-    background-size: 500px 400px;
-    background-repeat: no-repeat;
+#bloco1 {
+    grid-row: 1/2;
     display: flex;
-    flex-direction: row;
-    border: 1px solid black;
-    align-items: first baseline;
-    justify-content: space-between;
-    position: relative;
+    flex-direction: column;
+    width: 100vw;
+    height: 400px;
+    background-image: url(img/teste.png);
+    background-size: 600px 600px;
+    background-position: 30% 50%;
+    background-repeat: no-repeat;
+
 }
 
-#texto1,
-#texto2,
-#texto3,
-#texto4 {
+#bloco1 p {
     position: absolute;
-    background-color: rgba(56, 56, 56, 0.603);
-    border-radius: 20px;
+    right: 80px;
+    top: 125px;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 3px black;
+    font-size: 23px;
+    text-align: center;
+    border-radius: 50px;
+    text-decoration: underline;
+
+}
+
+#bloco2 {
+    grid-row: 2/3;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 400px;
+    padding: 20px;
+    align-content: center;
+
+}
+
+#bloco2 h1 {
+    font-size: 25px;
+    text-decoration: underline;
+    text-decoration-color: goldenrod;
+}
+
+#bloco2 p {
+    color: black;
     padding: 10px;
+    font-size: 17px;
+    margin: 20px;
 }
 
-#texto1 {
-    right: 10px;
-    top: 40px;
-    color: goldenrod;
-}
-
-#texto2 {
-    right: 30px;
-    top: 97px;
-}
-
-#texto3 {
-    left: 60px;
-    top: 220px;
-}
-
-#texto4 {
-    left: 30px;
-    top: 277px;
-    color: goldenrod;
-}
-
-.bloco1Texto {
-    grid-row: 2 / 3;
-    border: 1px solid black;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    padding: 20px;
-    margin-bottom: 50px;
-    align-items: center;
-}
-
-.bloco1Texto p {
-    font-size: 13px;
-    color: black;
-    padding-bottom: 20px;
-}
-
-#botaobloco1 {
-    padding: 3px;
-    border-radius: 5px;
-}
-
-/*---------- Bloco 2 ----------*/
-.bloco2 {
-    height: 350px;
-    grid-row: 3 / 4;
-    background-image: url(img/academia.png);
-    background-position: center;
-    background-size: 500px 400px;
+#bloco3 {
+    grid-row: 3/4;
+    background-image: url(img/teste2.png);
+    width: 100vw;
+    height: 400px;
+    background-size: 550px 500px;
+    background-position: 60% 20%;
     background-repeat: no-repeat;
-    display: flex;
-    flex-direction: row;
-    border: 1px solid black;
-    align-items: first baseline;
-    justify-content: space-between;
-    position: relative;
 }
 
-.bloco2Texto {
-    grid-row: 4 / 5;
-    border: 1px solid black;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+#bloco3 p {
+    position: absolute;
+    right: 120px;
+    top: 975px;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 3px black;
+    font-size: 23px;
+    text-align: center;
+    border-radius: 50px;
+    text-decoration: underline;
+}
+
+#bloco4 {
+    grid-row: 4/5;
     display: flex;
-    justify-content: space-around;
     flex-direction: column;
+    width: 100vw;
+    height: 400px;
     padding: 20px;
-    margin-bottom: 50px;
-    align-items: center;
+    align-content: center;
+
 }
 
-.bloco2Texto p {
-    font-size: 13px;
+#bloco4 h1 {
+    font-size: 25px;
+    text-decoration: underline;
+    text-decoration-color: goldenrod;
+}
+
+#bloco4 p {
     color: black;
-    padding-bottom: 20px;
-}
-
-#botaobloco2 {
-    padding: 3px;
-    border-radius: 5px;
-
-}
-
-/*---------- Bloco 3 ----------*/
-.bloco3 {
-    height: 350px;
-    grid-row: 5 / 6;
-    background-image: url(img/atendente.png);
-    background-position: center;
-    background-size: 500px 400px;
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: row;
-    border: 1px solid black;
-    align-items: first baseline;
-    justify-content: space-between;
-    position: relative;
-}
-
-.bloco3Texto {
-    grid-row: 6 /7;
-    border: 1px solid black;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    padding: 20px;
-    margin-bottom: 50px;
-    align-items: center;
-}
-
-.bloco3Texto p {
-    font-size: 13px;
-    color: black;
-    padding-bottom: 20px;
-}
-
-#botaobloco3 {
-    padding: 3px;
-    border-radius: 5px;
-}
-
-/*---------- Footer ----------*/
-footer {
-    border: 1px solid black;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
+    padding: 10px;
+    font-size: 17px;
+    margin: 20px;
 }
