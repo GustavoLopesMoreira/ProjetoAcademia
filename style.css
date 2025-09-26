@@ -98,17 +98,35 @@ main {
 
 }
 
-#bloco1 p {
+.teste {
     position: absolute;
-    right: 80px;
     top: 125px;
     color: rgb(255, 255, 255);
     text-shadow: 1px 1px 3px black;
-    font-size: 23px;
+    font-size: 25px;
     text-align: center;
     border-radius: 50px;
-    text-decoration: underline;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    white-space: nowrap;
+    width: 0;
+    animation: typing 1s steps(20, end) forwards, blink 0.7s infinite;
 
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 30ch;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
 }
 
 #bloco2 {
@@ -147,14 +165,33 @@ main {
 
 #bloco3 p {
     position: absolute;
-    right: 120px;
     top: 975px;
     color: rgb(255, 255, 255);
     text-shadow: 1px 1px 3px black;
     font-size: 23px;
     text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     border-radius: 50px;
-    text-decoration: underline;
+    white-space: nowrap;
+    width: 0;
+    animation: typing 1s steps(20, end) forwards, blink 0.7s infinite;
+
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 30ch;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
 }
 
 #bloco4 {
