@@ -91,43 +91,26 @@ main {
     flex-direction: column;
     width: 100vw;
     height: 400px;
-    background-image: url(img/teste.png);
-    background-size: 600px 600px;
-    background-position: 30% 50%;
+    background-image: url(img/homem-academia-musculacao-fitness.webp);
+    background-size: 500px 400px;
+    background-position: center;
     background-repeat: no-repeat;
 
 }
 
-.teste {
+.textobloco1 {
     position: absolute;
-    top: 125px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     color: rgb(255, 255, 255);
     text-shadow: 1px 1px 3px black;
-    font-size: 25px;
+    font-size: 19px;
     text-align: center;
-    border-radius: 50px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    white-space: nowrap;
-    width: 0;
-    animation: typing 1s steps(20, end) forwards, blink 0.7s infinite;
 
 }
 
-@keyframes typing {
-    from {
-        width: 0;
-    }
-
-    to {
-        width: 30ch;
-    }
-}
-
-@keyframes blink {
-    50% {
-        border-color: transparent;
-    }
-}
 
 #bloco2 {
     grid-row: 2/3;
@@ -155,44 +138,25 @@ main {
 
 #bloco3 {
     grid-row: 3/4;
-    background-image: url(img/teste2.png);
+    background-image: url(img/academia.png);
     width: 100vw;
     height: 400px;
-    background-size: 550px 500px;
-    background-position: 60% 20%;
+    background-size: 500px 400px;
     background-repeat: no-repeat;
+    text-align: center;
 }
 
 #bloco3 p {
-    position: absolute;
-    top: 975px;
+    font-size: 20px;
     color: rgb(255, 255, 255);
     text-shadow: 1px 1px 3px black;
-    font-size: 23px;
+    margin-top: 20px;
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    border-radius: 50px;
-    white-space: nowrap;
-    width: 0;
-    animation: typing 1s steps(20, end) forwards, blink 0.7s infinite;
 
 }
 
-@keyframes typing {
-    from {
-        width: 0;
-    }
 
-    to {
-        width: 30ch;
-    }
-}
-
-@keyframes blink {
-    50% {
-        border-color: transparent;
-    }
-}
 
 #bloco4 {
     grid-row: 4/5;
