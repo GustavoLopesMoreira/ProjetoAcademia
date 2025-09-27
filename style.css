@@ -30,6 +30,7 @@ header {
     background-color: rgb(224, 224, 224);
     padding: 15px;
     gap: 5px;
+    margin: auto;
 }
 
 footer {
@@ -89,13 +90,12 @@ main {
     grid-row: 1/2;
     display: flex;
     flex-direction: column;
-    width: 100vw;
     height: 400px;
     background-image: url(img/homem-academia-musculacao-fitness.webp);
     background-size: 500px 400px;
     background-position: center;
     background-repeat: no-repeat;
-
+  
 }
 
 .textobloco1 {
@@ -116,7 +116,6 @@ main {
     grid-row: 2/3;
     display: flex;
     flex-direction: column;
-    width: 100vw;
     height: 400px;
     padding: 20px;
     align-content: center;
@@ -139,7 +138,6 @@ main {
 #bloco3 {
     grid-row: 3/4;
     background-image: url(img/academia.png);
-    width: 100vw;
     height: 400px;
     background-size: 500px 400px;
     background-repeat: no-repeat;
@@ -153,7 +151,6 @@ main {
     margin-top: 20px;
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
 }
 
 
@@ -162,7 +159,6 @@ main {
     grid-row: 4/5;
     display: flex;
     flex-direction: column;
-    width: 100vw;
     height: 400px;
     padding: 20px;
     align-content: center;
