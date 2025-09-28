@@ -74,7 +74,7 @@ main {
     display: grid;
     grid-template-columns: 1fr;
     background-color: var(--background1);
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
 }
 
 /*---------- Configs Gerais Blocos ----------*/
@@ -90,6 +90,17 @@ main {
     position: relative;
     text-align: center;
     align-items: center;
+}
+.blocoImagem p {
+    font-size: 21px;
+    color: var(--cor1);
+    text-shadow: 1px 1px 1px var(--cor5);
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: absolute;
+    top: 3%;
+   padding: 1px;
+    background-color: rgba(0, 0, 0, 0.473);
 }
 
 .blocoTexto {
@@ -118,19 +129,7 @@ main {
 
 #bloco1 {
     grid-row: 1/2;
-    background-image: url(img/homem-academia-musculacao-fitness.webp);
-}
-
-#bloco1 p {
-    position: absolute;
-    top: 3%;
-    color: var(--cor1);
-    text-shadow: 1px 1px 3px black;
-    font-size: 20px;
-    text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: var(--cor5);
-    padding: 5px;
+    background-image: url(img/foto1.webp);
 }
 
 #bloco2 {
@@ -139,24 +138,24 @@ main {
 
 #bloco3 {
     grid-row: 3/4;
-    background-image: url(img/Como-criar-o-habito-de-ir-para-a-academia-destaque.png);
+    background-image: url(img/foto2.png);
 }
 
-#bloco3 p {
-    font-size: 20px;
-    color: var(--cor1);
-    text-shadow: 1px 1px 1px var(--cor5);
-    text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    position: absolute;
-    top: 3%;
-    padding: 5px;
-    background-color: rgba(0, 0, 0, 0.473);
-}
+
 
 #bloco4 {
     grid-row: 4/5;
 }
+
+#bloco5{
+   grid-row: 5/6;
+    background-image:url(img/foto3.jpg) ;
+}
+
+#bloco6{
+    grid-row: 6/7;
+}
+
 footer {
     border: 1px solid black;
     padding: 20px;
