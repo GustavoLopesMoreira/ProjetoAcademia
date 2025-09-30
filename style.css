@@ -1,4 +1,5 @@
 /*---------- Configs Globais ----------*/
+
 * {
     margin: 0;
     padding: 0;
@@ -19,6 +20,7 @@
 }
 
 /*---------- Header ----------*/
+
 body {
     background-color: var(--background1);
 }
@@ -40,7 +42,6 @@ header {
 
 #menu {
     font-size: 14px;
-
 }
 
 header #menu ul {
@@ -66,10 +67,11 @@ header a:hover {
 }
 
 .paginaatual {
-    border-bottom: 3px solid goldenrod;
+    border-bottom: 2px solid goldenrod;
 }
 
 /*---------- Main ----------*/
+
 main {
     display: grid;
     grid-template-columns: 1fr;
@@ -77,9 +79,8 @@ main {
     grid-template-rows: repeat(6, 1fr);
 }
 
-/*---------- Configs Gerais Blocos ----------*/
+/*---------- Index ----------*/
 
-/*---------- Bloco 1 ----------*/
 .blocoImagem {
     display: flex;
     flex-direction: column;
@@ -91,6 +92,7 @@ main {
     text-align: center;
     align-items: center;
 }
+
 .blocoImagem p {
     font-size: 21px;
     color: var(--cor1);
@@ -99,7 +101,7 @@ main {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     position: absolute;
     top: 3%;
-   padding: 1px;
+    padding: 1px;
     background-color: rgba(0, 0, 0, 0.473);
 }
 
@@ -147,18 +149,56 @@ main {
     grid-row: 4/5;
 }
 
-#bloco5{
-   grid-row: 5/6;
-    background-image:url(img/foto3.jpg) ;
+#bloco5 {
+    grid-row: 5/6;
+    background-image: url(img/foto3.jpg);
 }
 
-#bloco6{
+#bloco6 {
     grid-row: 6/7;
 }
 
+/*---------- Aulas ----------*/
+
+/*---------- Horários ----------*/
+/*---------- Planos ----------*/
+/*---------- Contatos ----------*/
+
+/* ---------- Unidades ----------*/
+#unidades {
+    grid-row: 1/2;
+    background-color: var(--cor1);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#unidades h1 {
+    color: var(--cor4);
+    font-size: 30px;
+    text-decoration: underline;
+    text-decoration-color: goldenrod;
+    text-align: center;
+}
+
+/*---------- Footer ----------*/
 footer {
+    display: flex;
     border: 1px solid black;
     padding: 20px;
     text-align: center;
     background-color: rgb(202, 201, 201);
+    flex-direction: row;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+
+footer ul li {
+    padding: 10px;
 }
