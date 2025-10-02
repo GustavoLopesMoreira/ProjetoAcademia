@@ -95,7 +95,7 @@ main {
 
 .blocoImagem p {
     font-size: 21px;
-    color: var(--cor1);
+    color: var(--cor2);
     text-shadow: 1px 1px 1px var(--cor5);
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
