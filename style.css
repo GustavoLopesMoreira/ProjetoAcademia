@@ -159,6 +159,70 @@ main {
 }
 
 /*---------- Aulas ----------*/
+#mainAulas {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+
+}
+
+.aulas {
+    border: 1px solid black;
+    min-height: 400px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+
+}
+
+#aula1 {
+    grid-row: 1;
+    background-image: url(img/academiaImagem.jpg);
+}
+
+#aula1 p {
+    color: var(--cor1);
+    background-color: rgba(0, 0, 0, 0.411);
+    border: 1px solid black;
+    width: 300px;
+    padding: 10px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+
+}
+
+#aula2 {
+    grid-row: 2;
+}
+
+#aula2 p {
+    background-color: black;
+}
+
+#aula3 {
+    grid-row: 3;
+
+}
+
+#aula4 {
+    grid-row: 4;
+
+}
+
+#aula5 {
+    grid-row: 5;
+
+}
+
+#aula6 {
+    grid-row: 6;
+
+}
+
+
+
 
 /*---------- Horários ----------*/
 /*---------- Planos ----------*/
