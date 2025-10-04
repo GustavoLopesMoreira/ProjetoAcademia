@@ -9,7 +9,7 @@
 :root {
     --cor1: rgb(224, 224, 224);
     --cor2: rgb(223, 167, 26);
-    --cor3: rgba(56, 56, 56, 0.603);
+    --cor3: rgb(197, 197, 197);
     --cor4: rgb(12, 12, 12);
     --cor5: rgba(0, 0, 0, 0.151);
     --background1: rgb(224, 224, 224);
@@ -30,10 +30,11 @@ header {
     flex-direction: column;
     text-align: center;
     align-items: center;
-    background-color: rgb(224, 224, 224);
+    background-color: var(--cor3);
     padding: 15px;
     gap: 5px;
-    margin: auto;
+    margin-bottom: 20px;
+    box-shadow: 1px 1px 4px black;
 }
 
 #logo {
@@ -91,6 +92,7 @@ main {
     position: relative;
     text-align: center;
     align-items: center;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
 }
 
 .blocoImagem p {
@@ -167,12 +169,20 @@ main {
 }
 
 .aulas {
-    border: 1px solid black;
+    box-shadow:  0 0 10px rgb(0, 0, 0);
     min-height: 400px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
+    transition: all 0.5s ease-in-out;
+    margin: 10px 0px 10px 0px;
+}
+
+.aulas:hover {
+    transform: translateY(-10px);
+
+
 
 }
 
@@ -195,30 +205,82 @@ main {
 
 #aula2 {
     grid-row: 2;
+    background-image: url(img/cardio.jpg);
 }
 
 #aula2 p {
-    background-color: black;
+    color: var(--cor1);
+    background-color: rgba(0, 0, 0, 0.411);
+    border: 1px solid black;
+    width: 300px;
+    padding: 10px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
 }
 
 #aula3 {
     grid-row: 3;
+    background-image: url(img/bike.png);
+}
 
+#aula3 p {
+    color: var(--cor1);
+    background-color: rgba(0, 0, 0, 0.411);
+    border: 1px solid black;
+    width: 300px;
+    padding: 10px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
 }
 
 #aula4 {
     grid-row: 4;
+    background-image: url(img/alongamento.png);
+}
 
+#aula4 p {
+    color: var(--cor1);
+    background-color: rgba(0, 0, 0, 0.411);
+    border: 1px solid black;
+    width: 300px;
+    padding: 10px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
 }
 
 #aula5 {
     grid-row: 5;
+    background-image: url(img/muaythai.jpg);
+}
 
+#aula5 p {
+    color: var(--cor1);
+    background-color: rgba(0, 0, 0, 0.411);
+    border: 1px solid black;
+    width: 300px;
+    padding: 10px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
 }
 
 #aula6 {
     grid-row: 6;
+    background-image: url(img/jiujits.jpg);
+}
 
+#aula6 p {
+    color: var(--cor1);
+    background-color: rgba(0, 0, 0, 0.411);
+    border: 1px solid black;
+    width: 300px;
+    padding: 10px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
 }
 
 
@@ -249,11 +311,11 @@ main {
 /*---------- Footer ----------*/
 footer {
     display: flex;
-    border: 1px solid black;
     padding: 20px;
     text-align: center;
-    background-color: rgb(202, 201, 201);
+    background-color: var(--cor3);
     flex-direction: row;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
 }
 
 footer ul {
