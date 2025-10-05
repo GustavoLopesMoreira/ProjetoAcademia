@@ -1,5 +1,4 @@
 /*---------- Configs Globais ----------*/
-
 * {
     margin: 0;
     padding: 0;
@@ -19,21 +18,20 @@
     --font2: ;
 }
 
-/*---------- Header ----------*/
-
 body {
     background-color: var(--background1);
 }
 
+/*---------- Header ----------*/
 header {
     display: flex;
     flex-direction: column;
-    text-align: center;
     align-items: center;
-    background-color: var(--cor3);
-    padding: 15px;
     gap: 5px;
+    padding: 15px;
     margin-bottom: 20px;
+    background-color: var(--cor3);
+    text-align: center;
     box-shadow: 1px 1px 4px black;
 }
 
@@ -52,19 +50,17 @@ header #menu ul {
 
 header ul li {
     list-style-type: none;
-
 }
 
 header a {
-    text-decoration: none;
-    color: rgb(22, 22, 22);
     padding: 3px;
+    color: rgb(22, 22, 22);
+    text-decoration: none;
 }
 
 header a:hover {
-    background-color: goldenrod;
     border-radius: 5px;
-
+    background-color: goldenrod;
 }
 
 .paginaatual {
@@ -72,49 +68,73 @@ header a:hover {
 }
 
 /*---------- Main ----------*/
-
 main {
     display: grid;
     grid-template-columns: 1fr;
-    background-color: var(--background1);
     grid-template-rows: repeat(6, 1fr);
+    background-color: var(--background1);
 }
 
-/*---------- Index ----------*/
+/*---------- Footer ----------*/
+footer {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    background-color: var(--cor3);
+    text-align: center;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+}
 
+footer ul {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    list-style: none;
+}
+
+footer ul li {
+    padding: 10px;
+}
+
+
+/* ==============================================
+PÁGINAS ESPECÍFICAS
+==============================================
+*/
+
+/*---------- Index ----------*/
 .blocoImagem {
+    position: relative;
     display: flex;
     flex-direction: column;
+    align-items: center;
     min-height: 400px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    position: relative;
     text-align: center;
-    align-items: center;
     box-shadow: 0 0 10px rgb(0, 0, 0);
 }
 
 .blocoImagem p {
-    font-size: 21px;
-    color: var(--cor2);
-    text-shadow: 1px 1px 1px var(--cor5);
-    text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     position: absolute;
     top: 3%;
     padding: 1px;
     background-color: rgba(0, 0, 0, 0.473);
+    color: var(--cor2);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 21px;
+    text-align: center;
+    text-shadow: 1px 1px 1px var(--cor5);
 }
 
 .blocoTexto {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-content: center;
     min-height: 400px;
     padding: 20px;
-    align-content: center;
-    align-content: center;
-    justify-content: center;
 }
 
 .blocoTexto h1 {
@@ -125,10 +145,10 @@ main {
 }
 
 .blocoTexto p {
-    color: var(--cor4);
-    padding: 10px;
-    font-size: 20px;
     margin: 15px;
+    padding: 10px;
+    color: var(--cor4);
+    font-size: 20px;
 }
 
 #bloco1 {
@@ -144,8 +164,6 @@ main {
     grid-row: 3/4;
     background-image: url(img/foto2.png);
 }
-
-
 
 #bloco4 {
     grid-row: 4/5;
@@ -165,25 +183,33 @@ main {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, 1fr);
-
 }
 
 .aulas {
-    box-shadow:  0 0 10px rgb(0, 0, 0);
+    position: relative;
+    margin: 10px 0px;
     min-height: 400px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    position: relative;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
     transition: all 0.5s ease-in-out;
-    margin: 10px 0px 10px 0px;
 }
 
 .aulas:hover {
     transform: translateY(-10px);
+}
 
-
-
+/* Regra única para todos os parágrafos dentro de .aulas */
+.aulas p {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 300px;
+    padding: 10px;
+    border: 1px solid black;
+    background-color: rgba(0, 0, 0, 0.411);
+    color: var(--cor1);
 }
 
 #aula1 {
@@ -191,32 +217,9 @@ main {
     background-image: url(img/academiaImagem.jpg);
 }
 
-#aula1 p {
-    color: var(--cor1);
-    background-color: rgba(0, 0, 0, 0.411);
-    border: 1px solid black;
-    width: 300px;
-    padding: 10px;
-    position: absolute;
-    top: 20px;
-    left: 20px;
-
-}
-
 #aula2 {
     grid-row: 2;
     background-image: url(img/cardio.jpg);
-}
-
-#aula2 p {
-    color: var(--cor1);
-    background-color: rgba(0, 0, 0, 0.411);
-    border: 1px solid black;
-    width: 300px;
-    padding: 10px;
-    position: absolute;
-    top: 20px;
-    left: 20px;
 }
 
 #aula3 {
@@ -224,31 +227,9 @@ main {
     background-image: url(img/bike.png);
 }
 
-#aula3 p {
-    color: var(--cor1);
-    background-color: rgba(0, 0, 0, 0.411);
-    border: 1px solid black;
-    width: 300px;
-    padding: 10px;
-    position: absolute;
-    top: 20px;
-    left: 20px;
-}
-
 #aula4 {
     grid-row: 4;
     background-image: url(img/alongamento.png);
-}
-
-#aula4 p {
-    color: var(--cor1);
-    background-color: rgba(0, 0, 0, 0.411);
-    border: 1px solid black;
-    width: 300px;
-    padding: 10px;
-    position: absolute;
-    top: 20px;
-    left: 20px;
 }
 
 #aula5 {
@@ -256,75 +237,20 @@ main {
     background-image: url(img/muaythai.jpg);
 }
 
-#aula5 p {
-    color: var(--cor1);
-    background-color: rgba(0, 0, 0, 0.411);
-    border: 1px solid black;
-    width: 300px;
-    padding: 10px;
-    position: absolute;
-    top: 20px;
-    left: 20px;
-}
-
 #aula6 {
     grid-row: 6;
     background-image: url(img/jiujits.jpg);
 }
 
-#aula6 p {
-    color: var(--cor1);
-    background-color: rgba(0, 0, 0, 0.411);
-    border: 1px solid black;
-    width: 300px;
-    padding: 10px;
-    position: absolute;
-    top: 20px;
-    left: 20px;
-}
-
-
-
-
 /*---------- Horários ----------*/
 /*---------- Planos ----------*/
 /*---------- Contatos ----------*/
 
-/* ---------- Unidades ----------*/
+/*---------- Unidades ----------*/
 #unidades {
     grid-row: 1/2;
-    background-color: var(--cor1);
-    padding: 30px;
     display: flex;
     flex-direction: column;
     gap: 20px;
-}
-
-#unidades h1 {
-    color: var(--cor4);
-    font-size: 30px;
-    text-decoration: underline;
-    text-decoration-color: goldenrod;
-    text-align: center;
-}
-
-/*---------- Footer ----------*/
-footer {
-    display: flex;
-    padding: 20px;
-    text-align: center;
-    background-color: var(--cor3);
-    flex-direction: row;
-    box-shadow: 0 0 10px rgb(0, 0, 0);
-}
-
-footer ul {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    margin: auto;
-}
-
-footer ul li {
-    padding: 10px;
-}
+    padding: 30px;
+    background-color: var;}
