@@ -35,8 +35,8 @@ header {
     box-shadow: 1px 1px 4px black;
 }
 
-#logo {
-    font-size: 15px;
+#logo img {
+    width: 130px;
 }
 
 #menu {
@@ -188,13 +188,15 @@ PÁGINAS ESPECÍFICAS
 
 .aulas {
     padding: 20px;
-     transition: all 0.6s ease-in-out;
+
+}
+.aulas p {
+    padding: 5px;
 }
 .aulas h1{
     text-decoration: underline var(--cor2);
     padding: 10px;
     margin-left: 25px;
-
 }
 .img{
     align-items: center;
@@ -202,17 +204,12 @@ PÁGINAS ESPECÍFICAS
 }
 .img img{
     margin-top: 30px;
-    width: 370px;
-    height: 300px;
+    width: 320px;
+    height: 250px;
     border-radius: 20px;
+    box-shadow: 1px 1px 5px black;
    
 }
-
-.img img:hover{
-    transform: scale(1.1);
-}
-
-
 
 
 /*---------- Horários ----------*/
