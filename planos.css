@@ -1,0 +1,150 @@
+/*---------- Configs Globais ----------*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor1: rgb(238, 238, 238);
+    --cor2: rgb(223, 167, 26);
+    --cor3: rgb(255, 208, 0);
+    --cor4: rgb(197, 197, 197);
+    --cor5: rgb(0, 0, 0);
+    --cor6:rgb(51, 51, 51);
+    --background1: rgb(224, 224, 224);
+    --background2: rgb(201, 201, 201);
+    --background3: ;
+    --font1: ;
+    --font2: ;
+    --sombra1: 1px 1px 4px black;
+    --sombra2: 1px 1px 10px rgb(0, 0, 0);
+    --sombra3: 0 8px 25px rgba(0, 0, 0, 0.1);
+    --sombra4: 1px 1px 5px rgb(223, 167, 26);
+}
+
+body {
+    background-color: var(--background1);
+
+}
+
+/* ---------- Planos ----------*/
+
+#planos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+#plano1 {}
+
+#plano2 {}
+
+.plano-card {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: var(--sombra3);
+    width: 320px;
+    padding: 30px;
+    border: 1px solid #e9e9e9;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    transition: box-shadow 0.3s ease, transform 0.2s ease;
+
+}
+
+.plano-card:hover {
+    box-shadow: var(--sombra4);
+    transform: translateY(-3px);
+}
+
+/* ---- Cabeçalho (Título e Preço) ---- */
+.plano-cabecalho {
+    text-align: center;
+    padding-bottom: 20px;
+    background-color: white;
+}
+
+.plano-titulo {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-decoration: underline var(--cor2);
+}
+
+.plano-preco .moeda {
+    font-size: 18px;
+    font-weight: 400;
+    vertical-align: top;
+    /* Alinha o R$ com o topo do valor */
+}
+
+.plano-preco .valor {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1;
+    /* Garante que a altura não crie espaços extras */
+}
+
+.plano-preco .periodo {
+    font-size: 16px;
+    color: #666;
+}
+
+/* ---- Lista de Atividades ---- */
+.plano-lista-atividades {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    /* Espaço entre cada item da lista */
+
+}
+
+.item-atividade {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* Espaço entre o ícone e o texto */
+}
+
+/* Adicionando o ícone de "check" antes de cada item */
+.item-atividade::before {
+    content: '\f00c';
+    /* Código do ícone de check no Font Awesome */
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    color: #28a745;
+    font-size: 14px;
+}
+
+
+/* ---- Rodapé e Botão ---- */
+
+.plano-rodape {
+    text-align: center;
+    background-color: white;
+}
+
+.botao-matricular {
+    display: inline-block;
+    background-color: var(--cor2);
+    color: #111;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 15px 30px;
+    border-radius: 50px;
+    width: 100%;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.botao-matricular:hover {
+    background-color: var(--cor3);
+    transform: translateY(-2px);
+}
