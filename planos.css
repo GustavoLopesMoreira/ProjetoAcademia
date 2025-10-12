@@ -1,3 +1,4 @@
+
 /*---------- Configs Globais ----------*/
 * {
     margin: 0;
@@ -7,12 +8,12 @@
 }
 
 :root {
-    --cor1: rgb(238, 238, 238);
+    --cor1: rgb(228, 226, 226);
     --cor2: rgb(223, 167, 26);
     --cor3: rgb(255, 208, 0);
-    --cor4: rgb(197, 197, 197);
+    --cor4: rgb(190, 190, 190);
     --cor5: rgb(0, 0, 0);
-    --cor6:rgb(51, 51, 51);
+    --cor6: rgb(51, 51, 51);
     --background1: rgb(224, 224, 224);
     --background2: rgb(201, 201, 201);
     --background3: ;
