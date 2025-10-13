@@ -1,14 +1,15 @@
 #banner {
     display: flex;
     justify-content: center;
-    height: 200px;
+
+    width: 100%;
     grid-row: 1;
 }
 
 #banner img {
     width: 100%;
-    max-width: 1250px;
-    box-shadow: 2px 2px 10px black;
+    height: 140px;
+    
 }
 
 .blocoTexto {
@@ -71,7 +72,8 @@
 }
 
 #bloco1 {
-    grid-row: 2;
+   margin: 1px solid black;
+
 }
 
 #bloco2 {
