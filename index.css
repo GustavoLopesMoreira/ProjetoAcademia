@@ -1,9 +1,7 @@
 #banner {
     display: flex;
     justify-content: center;
-
     width: 100%;
-    grid-row: 1;
 }
 
 #banner img {
@@ -13,9 +11,12 @@
 }
 
 .blocoTexto {
-    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
+    box-shadow: var(--sombra1);
 }
 
 .blocoTexto h1 {
@@ -27,8 +28,11 @@
 .blocoTexto p {
     font-size: 20px;
     padding: 5px;
+    margin-bottom: 15px;
 }
-
+.blocoTexto img{
+    border-radius: 40%;
+}
 .blocoTexto a {
     text-decoration: 2px underline var(--cor2);
     font-size: 17px;
@@ -46,7 +50,10 @@
     justify-content: center;
 
 }
+.blocoImagem:hover{
 
+
+}
 .blocoImagem img {
     width: 95%;
     max-height: 300px;
@@ -72,30 +79,30 @@
 }
 
 #bloco1 {
-   margin: 1px solid black;
-
+    
+    
 }
 
 #bloco2 {
-    grid-row: 3;
+   
 }
 
 #bloco3 {
-    grid-row: 4;
+    
 }
 
 #bloco4 {
-    grid-row: 5;
+   
 }
 
 #bloco5 {
-    grid-row: 6;
+   
 }
 
 #bloco6 {
-    grid-row: 7;
+    
 }
 
 #bloco7 {
-    grid-row: 8;
+    
 }
