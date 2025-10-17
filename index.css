@@ -20,8 +20,8 @@
 }
 
 .fundo {
-    background-position: center;
-    background-size: cover;
+
+
     height: 400px;
     width: 100%;
     padding: 25px;
@@ -30,29 +30,22 @@
     justify-content: space-between;
 }
 
-.fundo:hover {
-    transform: scale(1.1);
-    padding: 25px;
-
-}
-
 .texto {
     color: white;
     background-color: rgba(0, 0, 0, 0.233);
     text-shadow: 1px 1px 1px black;
-
 }
 
 .bloco h1 {
     text-decoration: underline var(--cor2);
     margin-left: 20px;
     padding: 10px;
-    font-size: 40px;
+    font-size: 35px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .bloco p {
-    font-size: 25px;
+    font-size: 23px;
     padding: 5px;
     margin-bottom: 15px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -62,7 +55,12 @@
     padding: 5px;
     box-shadow: var(--sombra1);
     margin-top: 30px;
+    border-radius: 10px;
 
+}
+.bloco button:hover{
+    background-color: var(--cor2);
+    box-shadow: 1px 1px 10px rgb(255, 183, 0);
 }
 
 .bloco a {
@@ -71,7 +69,21 @@
     color: var(--cor5);
 }
 
-
+#bloco1 {
+    background-image: url(img/indexacademia.webp);
+    background-position: center;
+    background-size: cover;
+}
+#bloco2 {
+    background-image: url(img/foto2.png);
+    background-position: center;
+    background-size: cover;
+}
+#bloco3 {
+    background-image: url(img/foto3.jpg);
+    background-position: center;
+    background-size: cover;
+}
 
 .blocoImagem {}
 
@@ -101,17 +113,7 @@
     text-shadow: 1px 1px 5px black;
 }
 
-#bloco1 {
-    background-image: url(img/indexacademia.webp);
-    background-position: center;
-    background-size: cover;
-    height: 400px;
-    width: 100%;
-    padding: 25px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
+#bloco1 {}
 
 #bloco1:hover {}
 
