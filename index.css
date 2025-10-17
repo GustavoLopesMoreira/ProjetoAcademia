@@ -7,53 +7,76 @@
 #banner img {
     width: 100%;
     height: 140px;
-    
+
 }
 
-.blocoTexto {
+.bloco {
+    height: 400px;
     margin: 10px;
     border-radius: 10px;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
     box-shadow: var(--sombra1);
+    overflow: hidden;
+
 }
 
-.blocoTexto h1 {
+.fundo {
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+    width: 100%;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.fundo:hover {
+    transform: scale(1.1);
+    padding: 25px;
+
+}
+
+.texto {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.233);
+    text-shadow: 1px 1px 1px black;
+
+}
+
+.bloco h1 {
     text-decoration: underline var(--cor2);
     margin-left: 20px;
     padding: 10px;
+    font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.blocoTexto p {
-    font-size: 20px;
+.bloco p {
+    font-size: 25px;
     padding: 5px;
     margin-bottom: 15px;
-}
-.blocoTexto img{
-    border-radius: 40%;
-}
-.blocoTexto a {
-    text-decoration: 2px underline var(--cor2);
-    font-size: 17px;
-    color: var(--cor4);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.blocoTexto button {
+.bloco button {
     padding: 5px;
     box-shadow: var(--sombra1);
     margin-top: 30px;
-}
-
-.blocoImagem {
-    display: flex;
-    justify-content: center;
 
 }
-.blocoImagem:hover{
 
-
+.bloco a {
+    text-decoration: 2px underline var(--cor2);
+    font-size: 20px;
+    color: var(--cor5);
 }
+
+
+
+.blocoImagem {}
+
+.blocoImagem:hover {}
+
 .blocoImagem img {
     width: 95%;
     max-height: 300px;
@@ -79,30 +102,27 @@
 }
 
 #bloco1 {
-    
-    
+    background-image: url(img/indexacademia.webp);
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+    width: 100%;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-#bloco2 {
-   
-}
+#bloco1:hover {}
 
-#bloco3 {
-    
-}
+#bloco2 {}
 
-#bloco4 {
-   
-}
+#bloco3 {}
 
-#bloco5 {
-   
-}
+#bloco4 {}
 
-#bloco6 {
-    
-}
+#bloco5 {}
 
-#bloco7 {
-    
-}
+#bloco6 {}
+
+#bloco7 {}
